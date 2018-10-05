@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mark-sheet</title>
+		<meta name="keywords" content="HTML,CSS">
+		<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+		<script type="text/javascript" src="assets/jquery/custom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script type="text/javascript" src="assets/jquery/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	</head>
+	<body id="header__anchor">
+		<!-- title -->
+		<div class="nav-bar">
+				<div class="container">
+						<div class="row">
+								<div class="col-sm-8">
+										<div class="site-branding">
+											<h1>Aashadeep Science School</h1>
+									</div>
+							</div>
+							<div class="col-sm-4 flex justify-content-end align-content-center">
+								<table class="ml-auto text-black">
+									<tbody>
+										<tr>
+											<th>Class: </th>
+												<td>8th</td>
+											<th>Date: </th>
+												<td>03/07/2018</td>
+										</tr>
+										<tr>
+											<th>Teacher: </th>
+												<td>meera desai</td>
+											<th>Time: </th>
+												<td>9Am</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--tabs-->
+				<div class="container">
+  				<ul class="nav nav-tabs" role="tablist">
+				    <li class="nav-item">
+				      <a class="nav-link active" data-toggle="tab" href="#home">home</a>
+				    </li>
+						<li class="nav-item dropdown">
+				      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Subject</a>
+				      	<div class="dropdown-menu">
+					        <a class="dropdown-item" href="#">English</a>
+					        <a class="dropdown-item" href="#">Gujarati</a>
+					        <a class="dropdown-item" href="#">Hindi</a>
+								</div>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" data-toggle="tab" href="#menu2">contact us</a>
+				    </li>
+				  </ul>
+				  <div class="tab-content">
+				    <div id="home" class="container tab-pane active"><br>
+				      <p>The earlier you start working on something, the earlier you will see results.</p>
+				    </div>
+				    <div id="menu1" class="container tab-pane"><br>
+				      <p>hey i am artika</p>
+				    </div>
+				    <div id="menu2" class="container tab-pane"><br>
+				      <p>something rights</p>
+				    </div>
+				  </div>
+				</div>
+				<!-- slidings -->
+				<div id="demo" class="carousel slide" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="assets\img\first.jpg" id="firstimg" alt="first image" class="img-thumbnail">
+						</div>
+						<div class="carousel-item">
+							<img src="assets\img\second.jpg" id="secondimg" class="img-thumbnail" alt="second image">
+						</div>
+						<div class="carousel-item">
+							<img src="assets\img\third.jpg" id="thirdimg" class="img-thumbnail" alt="third image">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+			</div>
+			<br>
+			<!--  side buttons -->
+			<div class="col-lg-2" id="sidebar">
+			<div class="btn-group-vertical">
+				<button type="button" class="btn btn-success btn-xs" id="small">Small size</button><br>
+				<button type="button" class="btn btn-success btn-mg" id="medium">Medium size</button><br>
+				<button type="button" class="btn btn-success btn-lg" id="large">Large size</button><br>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add new record</button><br>
+					<div class="modal" id="myModal" role="dialog">
+    				<div class="modal-dialog">
+      				<div class="modal-content">
+        				<div class="modal-header">
+          				<h4 class="modal-title">Information</h4>
+          					<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				</div>
+        				<div class="modal-body" id="addingdata">
+								      <input type="text"    class="form-control" placeholder="Enter id"                name="id"      id="id"><br><br>
+								     	<input type="text"    class="form-control" placeholder="Enter name"              name="name"    id="name"><br><br>
+											<input type="number"  class="form-control" placeholder="Enter marks of English"  name="english" id="english"><br><br>
+								     	<input type="number"  class="form-control" placeholder="Enter marks of Gujarati" name="gujarati"id="gujarati"><br><br>
+											<input type="number"  class="form-control" placeholder="Enter marks of Hindi"    name="hindi"   id="hindi"><br><br>
+								    	<button  type="submit" class="btn btn-success btn-xs" id="add" data-dismiss="modal">Submit</button>
+								 </div>
+      				</div>
+    				</div>
+  				</div>
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#removedata">Remove action</button>
+				  <div class="modal" id="removedata" role="dialog">
+				    <div class="modal-dialog">
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <h4 class="modal-title">Remove Record</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+				        <div class="body" id="removedata">
+				          <p>Are you sure you want to delete last record of table??</p>
+				        </div>
+				        <div class="modal-footer">
+									<button type="button" class="btn btn-dark" data-dismiss="modal" id="remove">Yes</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+		<!-- table -->
+		<div class="col-lg-10" id="main">
+			<table class="table table-success table-hover" id="record" cellpadding="10" cellspacing="10">
+					<thead>
+						<tr>
+							<th>button</th>
+							<th align="center">Id</th>
+							<th align="center">Name</th>
+							<th align="center">English</th>
+							<th align="center">Gujrati</th>
+							<th align="center">Hindi</th>
+							<th align="center">Total</th>
+							<th align="center">Percentage</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button type='button' class='fa fa-edit' id='editbutton' data-toggle='modal' data-target='#editdata'></button>
+							<div class='modal' id='editdata' role='dialog'>
+								<div class='modal-dialog'>
+									<div class='modal-content'>
+										<div class='modal-header'>
+											<h4 class='modal-title'>Edit data</h4>
+												<button type='button' class='close' data-dismiss='modal'>&times;</button>
+										</div>
+										<div class='modal-body'>
+													<input type='text'    placeholder='Enter id'                name='id'      value='' id='id'><br><br>
+													<input type='text'    placeholder='Enter name'              name='name'    value='' id='name'><br><br>
+													<input type='number'  placeholder='Enter marks of English'  name='english' value='' id='english'><br><br>
+													<input type='number'  placeholder='Enter marks of Gujarati' name='gujarati'value='' id='gujarati'><br><br>
+													<input type='number'  placeholder='Enter marks of Hindi'    name='hindi'   value='' id='hindi'><br><br>
+													<button  type='submit' id='submit' data-dismiss='modal'>Save changes</button>
+										 </div>
+									</div>
+								</div>
+							</div>
+							</td>
+							<td align="center"><input type="text" name="id" value="" id=id/></td>
+							<td align="left"><input type="text" name="name_1" value="" id=name /></td>
+							<td align="right"><input type="text" id="english_1"  name="english_1"  	value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><input type="text" id="gujarati_1" name="gujarati_1" 	value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><input type="text" id="hindi_1"    name="hindi_1" 		value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><output id="total_1"   class="total"></output></td>
+							<td align="right"><output id="average_1" class="average"></output></td>
+						</tr>
+						<tr>
+							<td><button type='button' class='fa fa-edit' id='editbutton' data-toggle='modal' data-target='#editdata'></td>
+							<td align="center"><input type="text" name="id" value="" id=id/></td>
+							<td align="left"><input type="text" name="name_2" value="" /></td>
+							<td align="right"><input type="text" id="english_2"  name="english_2" 	value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><input type="text" id="gujarati_2" name="gujarati_2" 	value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><input type="text" id="hindi_2"    name="hindi_2" 		value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><output id="total_2"   class="total"></output></td>
+							<td align="right"><output id="average_2" class="average"></output></td>
+						</tr>
+						<tr>
+							<td><button type='button' class='fa fa-edit' id='editbutton' data-toggle='modal' data-target='#editdata'></button></td>
+							<td align="center"><input type="text" name="id" value="" id=id/></td>
+							<td align="left"><input type="text" name="name_3" value="" /></td>
+							<td align="right"><input type="text" id="english_3"  name="english_3" 	value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><input type="text" id="gujarati_3" name="gujarati_3" 	value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><input type="text" id="hindi_3"    name="hindi_3" 		value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><output id="total_3"   class="total"></output></td>
+							<td align="right"><output id="average_3" class="average"></output></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<br>
+			<!-- footer -->
+			<footer class="col-lg-12">
+				<div class="content">
+					<table class="table table-borderless">
+						<tbody>
+							<tr>
+								<th>Total No. of Student:</th>
+								<td><output id="no_of_student">3</output></td>
+							</tr>
+							<tr>
+								<th>Total marks:</th>
+								<td><output id="total">0</output></td>
+							</tr>
+							<tr>
+								<th>Average marks:</th>
+								<td><output id="average">0</output></td>
+							</tr>
+							<tr>
+								<th>Highest marks:</th>
+								<td><output id="max">0</output></td>
+							</tr>
+							<tr>
+								<th>Lowest marks:</th>
+								<td><output id="min">0</output></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="up">
+						<a id="back-to-top" href="#" class="btn btn-success btn-lg back-to-top">
+							<i class="fa fa-angle-up"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
+
+	</body>
+</html>
